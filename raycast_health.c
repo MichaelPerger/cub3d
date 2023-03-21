@@ -34,12 +34,12 @@ int	health_putter(t_vars *vars)
 	int	health;
 
 	health = vars->player_health * 3.2;
-	mlx_put_image_to_window(vars->mlx, vars->win, vars->text.health.img, 500,
-		750);
+	mlx_put_image_to_window(vars->mlx, vars->win, vars->text.health.img, WIN_WIDTH * 0.390625,
+		WIN_HEIGHT * 0.9375);
 	while (health > 0)
 	{
 		mlx_put_image_to_window(vars->mlx, vars->win, vars->text.health_bar.img,
-			507 + health, 757);
+			WIN_WIDTH * 0.39609375 + health -1, WIN_HEIGHT * 0.94625);
 		health--;
 	}
 	return (0);

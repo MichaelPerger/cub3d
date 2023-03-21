@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   raycast.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mkoller <mkoller@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mperger <mperger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/24 14:06:47 by mkoller           #+#    #+#             */
-/*   Updated: 2023/03/07 15:02:35 by mkoller          ###   ########.fr       */
+/*   Updated: 2023/03/21 15:05:41 by mperger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@
 # define ROT_RIGHT 65363
 # define ROT_LEFT 65361
 
-# define WIN_HEIGHT 800
-# define WIN_WIDTH 1280
+# define WIN_HEIGHT 700
+# define WIN_WIDTH 1366
 
 # define SIGHT_RANGE 5
 # define PLAYER_HEALTH 100

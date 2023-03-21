@@ -20,7 +20,7 @@ int	fps_putter(t_vars *vars)
 	time_stuff.current_time = time(&t);
 	time_stuff.elapsed_time = time_stuff.current_time - time_now;
 	frames++;
-	mlx_string_put(vars->mlx, vars->win, 5, 795, 0x000000, "FPS:  ");
+	mlx_string_put(vars->mlx, vars->win, WIN_WIDTH * 0.00390625, WIN_HEIGHT*0.99375, 0x000000, "FPS:  ");
 	if (time_stuff.elapsed_time >= 1.0)
 	{
 		time_stuff.fps = frames / time_stuff.elapsed_time;
@@ -29,7 +29,7 @@ int	fps_putter(t_vars *vars)
 		frames = 0;
 	}
 	time_stuff.itoa = ft_itoa(old_fps);
-	mlx_string_put(vars->mlx, vars->win, 35, 795, 0x000000, time_stuff.itoa);
+	mlx_string_put(vars->mlx, vars->win, WIN_WIDTH * 0.02734375, WIN_HEIGHT*0.99375, 0x000000, time_stuff.itoa);
 	free(time_stuff.itoa);
 	return (0);
 }
